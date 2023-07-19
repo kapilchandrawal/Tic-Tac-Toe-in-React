@@ -1,6 +1,7 @@
 // import logo from "./logo.svg";z
 import "./App.css";
 import { useState } from "react";
+import "./styles.css";
 
 function Square({value, onSquareClick}) {
   return (
