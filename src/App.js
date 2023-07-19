@@ -1,9 +1,8 @@
-// import logo from './logo.svg';
+// import logo from "./logo.svg";z
 import "./App.css";
-import "./styles.css";
 import { useState } from "react";
 
-function Square({ value, onSquareClick }) {
+function Square({value, onSquareClick}) {
   return (
     <button className="square" onClick={onSquareClick}>
       {value}
@@ -41,9 +40,9 @@ export default function App() {
     }
     const nextSquares = squares.slice();
     if (xIsNext) {
-      nextSquares[i] = "X";
+      nextSquares[i] = 'X';
     } else {
-      nextSquares[i] = "O";
+      nextSquares[i] = 'O';
     }
     setSquares(nextSquares);
     setXIsNext(!xIsNext);
@@ -52,9 +51,9 @@ export default function App() {
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
-    status = "Winner: " + winner;
+    status = 'Winner: ' + winner;
   } else {
-    status = "Next player: " + (xIsNext ? "X" : "O");
+    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
   }
 
   return (
